@@ -7,7 +7,7 @@ function getCommits(el){
 }
 
 function showCommits(){
-  
+  var commits = JSON.parse(this.responseText);
 }
 function showRepositories(){
   var repos = JSON.parse(this.responseText);
