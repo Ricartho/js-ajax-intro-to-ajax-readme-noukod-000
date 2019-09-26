@@ -1,5 +1,6 @@
 function showRepositories(){
-  console.log(this.responseText);
+  var repos = JSON.parse(this.responseText);
+  console.log(repos);
 }
 function getRepositories(){
   const req = new XMLHttpRequest();
