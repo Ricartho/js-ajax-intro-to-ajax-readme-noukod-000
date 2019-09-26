@@ -8,7 +8,7 @@ function getCommits(el){
 
 function showCommits(){
   const commits = JSON.parse(this.responseText);
-  const commitList = `<ul>${commits.map(commit =>'<li><strong>'+commit.author.login+'</strong> - '+ commit.commit.message + '</li>').join('')}</ul>`
+  const commitList = `<ul>${commits.map(commit =>'<li><strong>'+commit.author.login+'</strong> - '+ commit.commit.message + '</li>').join('')}</ul>`;
 }
 function showRepositories(){
   const repos = JSON.parse(this.responseText);
