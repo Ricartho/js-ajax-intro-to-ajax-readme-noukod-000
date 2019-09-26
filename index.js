@@ -8,7 +8,7 @@ function getCommits(el){
 
 function showCommits(){
   const commits = JSON.parse(this.responseText);
-  const commitList = ``
+  const commitList = `<ul>${commits.map(commit =>)}`
 }
 function showRepositories(){
   const repos = JSON.parse(this.responseText);
